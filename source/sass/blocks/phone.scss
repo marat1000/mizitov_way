@@ -1,0 +1,34 @@
+.phone {
+    display: flex;
+    align-items: center;
+    color: $color-2;
+
+    svg {
+        margin-right: 5px;
+        fill: none;
+        stroke: $color-2;
+    }
+
+    &:hover {
+        color: $color-hover;
+
+        svg {
+            stroke: $color-hover;
+        }
+    }
+
+    &:active {
+        color: rgba($color-hover, 0.5);
+
+        svg {
+            stroke: rgba($color-hover, 0.5);
+        }
+    }
+}
+
+.phone__number {
+    font-size: 18px;
+    line-height: 32px;
+
+    text-decoration: underline;
+}

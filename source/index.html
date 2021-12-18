@@ -6,38 +6,53 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Way - тур по Европе</title>
-    <link rel="preload" href="/fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="page-body">
 <header class="page-header">
-    <a class="logo" href="#" aria-label="Логотип  Way"></a>
-    <nav class="main-nav">
-        <ul class="main-nav__list">
-            <li class="main-nav__item">
-                <a href="#locations">О путешествии</a>
-            </li>
-            <li class="main-nav__item">
-                <a href="#prices">Цены</a>
-            </li>
-        </ul>
-    </nav>
-    <a href="tel:+749978468446" class="phone" aria-label="Телефон">+7 (499) -784-684-46</a>
-    <button class="page-header__toggle" aria-label="Меню"></button>
+    <div class="page-body__inner">
+        <div class="page-header__wrapper page-header__wrapper--nojs">
+            <a class="page-header__logo" href="#" aria-label="Логотип  Way">
+                <svg width="58" height="22">
+                    <use xlink:href="img/svg/sprite.svg#sprite-logo"></use>
+                </svg>
+            </a>
+            <nav class="main-nav">
+                <ul class="main-nav__list main-nav__list--opened main-nav__list--nojs">
+                    <li class="main-nav__item">
+                        <a href="#locations">О путешествии</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#prices">Цены</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="tel:+749978468446" class="page-header__phone phone" aria-label="Телефон">
+                <svg width="17" height="24">
+                    <use xlink:href="img/svg/sprite.svg#sprite-phone"></use>
+                </svg>
+                <span class="phone__number">+7 (499) -784-684-46</span>
+            </a>
+            <button class="page-header__toggle" aria-label="Меню"></button>
+        </div>
+    </div>
 </header>
 
 <main class=page-main>
     <h1 class="visually-hidden">Way - тур по Европе</h1>
     <section class="intro">
-        <div class="intro__block">
-            <h2 class="intro__title">Путешествие по Европе</h2>
-            <p class="intro__description">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море,
-                горы, а также потрясающая красота природы.</p>
-            <a href="#catalog" class="intro__link button">Смотреть тур</a>
+        <div class="page-body__inner">
+            <div class="intro__block">
+                <h2 class="intro__title">Путешествие по Европе</h2>
+                <p class="intro__description">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море,
+                    горы, а также потрясающая красота природы.</p>
+                <a href="#catalog" class="intro__link button">Смотреть тур</a>
+            </div>
         </div>
     </section>
     <section class="locations" id="locations">
@@ -193,5 +208,6 @@
         <p class="popup-2__text">Форма успешно отправлена, спасибо! :)</p>
     </div>
 </div>
+<script src="js/main.min.js"></script>
 </body>
 </html>

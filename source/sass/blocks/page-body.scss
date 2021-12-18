@@ -1,0 +1,27 @@
+.page-body {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 27px;
+    display: grid;
+    align-content: start;
+
+    min-width: $mobile-width;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    color: $color-1;
+    background-color: $bg-basic-1;
+    grid-template-rows: min-content 1fr min-content;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+}
+
+.page-body__inner {
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    @media (max-width: $tablet-width-max) {
+        padding: 0;
+    }
+}
