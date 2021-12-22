@@ -13,19 +13,11 @@ menu.addEventListener('click', function() {
     menu.classList.toggle('page-header__toggle--closed');
 })
 
+
 let buttonPopup = document.querySelectorAll('.button--popup');
 let popupForm = document.querySelector('.popup-form__form');
 let success = document.querySelector('.popup-success');
 let popupClose = document.querySelectorAll('.popup-form__close');
-
-
-let onFormEscKeydown = (evt) => {
-    if (evt.key === 'Escape' || evt.key === 'Esc') {
-        evt.preventDefault();
-        popupForm.style.display = 'none';
-        succsess.style.display = 'none';
-    }
-};
 
 buttonPopup.forEach((item) =>  {
     item.addEventListener('click', () => {
@@ -39,6 +31,14 @@ popupClose.forEach((item) => {
         success.style.display = 'none';
     })
 })
+
+let onFormEscKeydown = (evt) => {
+    if (evt.key === 'Escape' || evt.key === 'Esc') {
+        evt.preventDefault();
+        popupForm.style.display = 'none';
+        success.style.display = 'none';
+    }
+};
 
 document.addEventListener('keydown', onFormEscKeydown);
 
