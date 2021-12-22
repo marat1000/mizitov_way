@@ -1,0 +1,83 @@
+.journeys__title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+
+    margin-top: 0;
+    margin-bottom: 21px;
+    color: $color-2;
+
+    @media (max-width: $mobile-width-max) {
+        text-align: center;
+    }
+}
+
+.journeys__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+
+    @media (max-width: $tablet-width-max) {
+        padding-right: 0;
+    }
+
+    @media (max-width: $mobile-width-max) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+
+.journeys__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    @include reset;
+
+    @media (max-width: $tablet-width-max) {
+        width: 100%;
+        max-width: 33%;
+        margin-right: 30px;
+    }
+
+    @media (max-width: $mobile-width-max) {
+        width: auto;
+        max-width: none;
+        margin-right: 0;
+        margin-bottom: 21px;
+        padding-right: 9px;
+        padding-left: 9px;
+    }
+}
+
+.journeys__item {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (max-width: $mobile-width-max) {
+        justify-content: center;
+    }
+}
+
+.journeys__link {
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+    color: transparentize($color-2, .5);
+
+    &:hover,
+    &:focus {
+        color: $color-hover;
+    }
+
+    &:active {
+        opacity: 0.7;
+    }
+}

@@ -22,7 +22,12 @@
     @media (max-width: $tablet-width-max) {
         width: 44px;
         height: 17px;
-        margin-left: 20px;
+        margin-left: 22px;
+    }
+
+    @media (max-width: $mobile-width-max) {
+        padding-top: 2px;
+        margin-left: 17px;
     }
 }
 
@@ -62,7 +67,14 @@
 }
 
 .page-header__phone {
+    padding-top: 7px;
+    padding-right: 4px;
+
     @media (max-width: $tablet-width-max) {
         display: none;
     }
+}
+
+.page-header__phone span {
+    margin-left: 10px;
 }
