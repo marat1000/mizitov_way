@@ -1,0 +1,114 @@
+.form__title {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 42px;
+
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.form__list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.form__field {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 269px;
+    margin-bottom: 20px;
+
+    @media (max-width: $mobile-width-max) {
+        max-width: 100%;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.form__label {
+    position: relative;
+}
+
+.form__label--required {
+    &::before {
+        position: absolute;
+        top: 10px;
+        left: 14px;
+        width: 6px;
+        height: 7px;
+
+        content: "";
+        background-image: url("../img/asterisk.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+.form__label--phone {
+    &::after {
+        font-size: 14px;
+        position: absolute;
+        top: 13px;
+        left: 25px;
+
+        content: "+7";
+    }
+
+    +.form__input {
+        padding-left: 49px;
+    }
+}
+
+.form__input {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 17px;
+    padding-right: 15px;
+    padding-bottom: 14px;
+    padding-left: 15px;
+    color: $color-2;
+    border: 1px solid rgba($color-4, 0.3);
+
+    &::placeholder {
+        font-size: 14px;
+        color: $color-2;
+    }
+
+    &:hover,
+    &:focus {
+        border: 1px solid rgba($color-4, 0.8);
+    }
+}
+
+.form__button {
+    min-width: 175px;
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 18px;
+    border: none;
+
+    @media (max-width: $tablet-width-max) {
+        min-width: 250px;
+        margin-top: 0;
+        padding: 19px;
+    }
+
+    @media (max-width: $mobile-width-max) {
+        min-width: 288px;
+        margin-top: 20px;
+    }
+}

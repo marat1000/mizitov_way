@@ -1,0 +1,20 @@
+.popup-success {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 730px;
+    height: 445px;
+    background-color: $bg-basic-2;
+
+    @media (max-width: $mobile-width-max) {
+        width: 288px;
+        height: 500px;
+    }
+}
+
+.popup-success__title {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 43px;
+    text-align: center;
+}
